@@ -7,7 +7,7 @@ public interface LoginActivityMVP {
         String getFirstName();
         String getLastName();
 
-        void showUserNotAvailble();
+        void showUserNotAvailable();
         void showInputError();
         void showUserSavedMessage();
 
@@ -18,14 +18,14 @@ public interface LoginActivityMVP {
 
     interface Presenter {
         void setView(LoginActivityMVP.View view);
-        void logginButtonClicked();
+        void loginButtonClicked();
         void getCurrentUser();
 
     }
 
     interface Model {
 
-        void creatrUser(String fname, String lname);
+        void createUser(String fname, String lname);
 
         User getUser();
 
